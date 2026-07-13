@@ -1,0 +1,36 @@
+{
+  "name": "filecraft",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "FileCraft — free online tools to convert, edit, sign and clean up your files, right in your browser.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host --port 4173",
+    "start": "vite preview --host --port $PORT"
+  },
+  "dependencies": {
+    "@imgly/background-removal": "^1.5.5",
+    "docx": "^8.5.0",
+    "file-saver": "^2.0.5",
+    "jspdf": "^2.5.1",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.8.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.4.168",
+    "pptxgenjs": "^3.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^6.26.0",
+    "tesseract.js": "^5.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
+    "vite": "^5.3.4"
+  }
+}

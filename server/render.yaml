@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: filecraft-converter
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: standard          # 1GB+ RAM -- needed for LibreOffice under real load
+    healthCheckPath: /health
+    envVars:
+      - key: ALLOWED_ORIGIN
+        value: https://your-frontend-domain.com   # replace with your actual frontend URL
+      - key: CONVERT_TIMEOUT_MS
+        value: "90000"
+    autoDeploy: true         # redeploy automatically on every push to your default branch
