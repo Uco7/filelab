@@ -327,7 +327,7 @@ app.post('/convert', upload.single('file'), async (req, res) => {
   }
 })
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT 
 app.listen(PORT, () => {
   console.log(`FileCraft conversion server listening on port ${PORT}`)
 })
