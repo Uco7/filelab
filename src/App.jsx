@@ -41,6 +41,7 @@ import KDPEbookFormatter from './pages/tools/KDPEbookFormatter.jsx'
 import CurrencyConverter from './pages/tools/CurrencyConverter.jsx'
 import CryptoConverter from './pages/tools/CryptoConverter.jsx'
 import StockChecker from './pages/tools/StockChecker.jsx'
+import  PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 
 export default function App() {
   return (
@@ -86,6 +87,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/bookstore/app/privacy-policy/page" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>
